@@ -6,7 +6,11 @@ public class Factorial {
 		int fact=1;
 		Scanner sc=new Scanner(System.in);
 		int n=sc.nextInt();
-		if(n>=0)
+		if(n==0)
+		{
+			System.out.println(fact);
+		}
+		else if(n>0)
 		{
 		for(int i=1;i<=n;i++)
 		{
@@ -14,6 +18,10 @@ public class Factorial {
 			
 		}
 		System.out.println(fact);
+	}
+	else
+	{
+		System.out.println("0");	
 	}
 	}
 
